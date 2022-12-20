@@ -80,8 +80,6 @@ GET http://fhir.example.com/MedicationOrder?patient=12345
       alert("Hello, World!");
     }
 
-    // Call the function when the page loads
-    button.addEventListener("click", showMessage());
           var button = document.createElement("button");
 
 // Set the button's text content
@@ -89,6 +87,7 @@ button.textContent = "Nappula";
 
 // Add the button to the page
 document.body.appendChild(button);
+              button.addEventListener("click", showMessage());
   </script>
     </div>
   </body>
