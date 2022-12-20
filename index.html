@@ -59,8 +59,8 @@ GET http://fhir.example.com/MedicationOrder?patient=12345
 <br>
  <table>
   <tr>
-    <td><button onclick="showMessage1()">Button 1</button></td>
-    <td><button onclick="showMessage2()">Button 2</button></td>
+    <td><button onclick="showMessage1()">Tervehdys</button></td>
+    <td><button onclick="showMessage2()">Mietelausegeneraattori</button></td>
   </tr>
 </table>
       <script>
@@ -69,10 +69,9 @@ GET http://fhir.example.com/MedicationOrder?patient=12345
     }
           var button = document.createElement("button");
 button.textContent = "Nappula";
-document.body.appendChild(button);
-              button.addEventListener("click", function() {
-  showMessage();
-});
+
+              button.addEventListener("click", function() {  showMessage(); });
+<!-- document.body.appendChild(button); -->
 
 var quotes = [
   "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it. - Steve Jobs",
@@ -95,7 +94,7 @@ button2.addEventListener("click", function() {
     showMessage2()
 });
 
-document.body.appendChild(button2);
+<!-- document.body.appendChild(button2); -->
   </script>      
     </div>
   </body>
