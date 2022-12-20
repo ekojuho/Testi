@@ -81,7 +81,7 @@ GET http://fhir.example.com/MedicationOrder?patient=12345
     }
 
     // Call the function when the page loads
-    button.click = showMessage;
+    button.addEventListener("click", showMessage());
           var button = document.createElement("button");
 
 // Set the button's text content
