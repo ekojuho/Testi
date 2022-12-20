@@ -57,13 +57,13 @@ GET http://fhir.example.com/MedicationOrder?patient=12345
 </pre>
 <p>Lisätietoa: <a href="http://hl7.org/fhir">FHIR documentation</a>.</p>
 <br>
-  <table>
-    <tr>
-      <th>Nappi1</th>
-      <th>Nappi2</th>
-    </tr>
-    <tr>
-      <td><button></button><script>
+ <table>
+  <tr>
+    <td><button>Button 1</button></td>
+    <td><button>Button 2</button></td>
+  </tr>
+</table>
+      <script>
     function showMessage1() {
       alert("Hellurei!");
     }
@@ -73,10 +73,7 @@ document.body.appendChild(button);
               button.addEventListener("click", function() {
   showMessage();
 });
-</script></td>
-    </tr>
-    <tr>
-      <td><button></button><script>
+
 var quotes = [
   "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it. - Steve Jobs",
   "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful. - Albert Schweitzer",
@@ -99,14 +96,7 @@ button2.addEventListener("click", function() {
 });
 
 document.body.appendChild(button2);
-  </script></td>
-    </tr>
-  </table>
-      <br>
-      <br>
-
-      <br>
-      
+  </script>      
     </div>
   </body>
 </html>
