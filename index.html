@@ -74,7 +74,7 @@ GET http://fhir.example.com/MedicationOrder?patient=12345
   </table>
         <script>
     // Define a function that displays a message
-    function showMessage() {
+    function showMessage1() {
       alert("Hellurei!");
     }
 
@@ -96,15 +96,17 @@ var quotes = [
   "Happiness is not something ready made. It comes from your own actions. - Dalai Lama",
   "The purpose of our lives is to be happy. - Dalai Lama"
 ];
+    function showMessage2() {
+      var quote = quotes[Math.floor(Math.random() * quotes.length)]
+      alert(quote);
+    }
 
 var button2 = document.createElement("button");
 
 button2.textContent = "Hae inspiraatiolause";
 
 button2.addEventListener("click", function() {
-    var quote = quotes[Math.floor(Math.random() * quotes.length)];
-
-    window.open("", quote, "width=400,height=200");
+    showMessage2()
 });
 
 document.body.appendChild(button2);
